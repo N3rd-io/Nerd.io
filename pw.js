@@ -12,15 +12,25 @@ var nerd3 = document.getElementById("nerd3");
 var code = document.getElementById("code");
 var clips = document.getElementsByClassName("clip");
 var vidt = document.getElementsByClassName("vidt");
+var cube = document.getElementsByClassName("cube")
+var cards = document.getElementsByClassName("card-c")
+var card = document.getElementsByClassName("card")
+var conter = document.getElementsByClassName("jo")
 
 if(window.innerWidth < 1115){
     for(let y = 0; y < slideImg.length; y++){
         slideImg[y].classList.remove("d-block")
         slideImg[y].style.maxWidth = "100%"
     }
+    for(let i = 0; i < card.length; i++){
+        card[i].style.width = "90%"
+        card[i].style.transform = "rotateX(0deg)"
+    }
     nerd2.remove();
-    nerd1.remove();
-    code.style.objectFit = "fill";
+    conter[0].style.maxWidth = "100%"
+    cube[0].remove();
+    cards[0].style.flexDirection = "column"
+    cards[0].style.alignContent = "center"
 }
 
 var date = new Date();
@@ -54,8 +64,6 @@ var bestClips = [
 ]
 
     var clipn = Math.floor(Math.random() * bestClips.length);
-    
-var card = document.getElementsByClassName("card")
 
 card[0].ondblclick = function redirect0(){window.open("https://callofduty.fandom.com/wiki/Simon_%22Ghost%22_Riley", "_blank")}
 card[1].ondblclick = function redirect1(){window.open("https://reddead.fandom.com/wiki/John_Marston","_blank")}

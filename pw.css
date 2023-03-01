@@ -315,6 +315,7 @@ body{
     color: white;
     border-radius: 20px;
     transform: rotateX(50deg);
+    user-select: none;
 }
 
 .card:hover{
