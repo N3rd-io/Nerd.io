@@ -209,13 +209,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 6%;
     margin-left: 4%;
     margin-right: 4%;
 }
 
 .container-fluid{
-    margin-top: 6%;
     overflow: hidden;
 }
 
@@ -267,6 +265,7 @@ body{
     box-shadow: 0rem 0rem 0 0 black, 0rem 0rem 70px aqua !important;
     transform: translateY(0%) translateX(0%);
     transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .shedow:hover{
@@ -330,6 +329,7 @@ body{
 .shodow{
     box-shadow: 0 0 40px aqua;
     transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .shodow:hover{
@@ -341,6 +341,7 @@ body{
 .jo{
     box-shadow: 0 0 40px aqua;
     transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .jo:hover{
@@ -392,28 +393,22 @@ body{
     left: 0;
     width: 300px;
     height: 300px;
-    background: #222;
+    background-image: url("./images/ste4.png");
     transform: rotateX(90deg) translateZ(150px);
 }
 
-.top::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 300px;
-    background-color: aqua;
-    transform: translateZ(-380px);
-    filter: blur(20px);
-    box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
-    0 0 200px rgba(0, 225, 255, 0.4),
-    0 0 300px rgba(0, 255, 255, 0.6),
-    0 0 400px rgba(0, 255, 255, 0.8),
-    0 0 500px rgba(0, 255, 255, 1),;
+.sp1{
+    background-image: url("./images/pfp.png") !important;
 }
 
-.cube span:hover{
-    background-image: none;
-    background-color: aqua;
+.sp2{
+    background-image: url("./images/ste.png") !important;
+}
+
+.sp3{
+    background-image: url("./images/ste3.png") !important;
+}
+
+.sp4{
+    background-image: url("./images/ste2.png") !important;
 }

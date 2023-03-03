@@ -26,7 +26,6 @@ if(window.innerWidth < 1115){
         card[i].style.width = "90%"
         card[i].style.transform = "rotateX(0deg)"
     }
-    nerd2.remove();
     conter[0].style.maxWidth = "100%"
     cube[0].remove();
     cards[0].style.flexDirection = "column"
