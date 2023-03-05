@@ -32,7 +32,7 @@ if(window.innerWidth < 1115){
     cards[0].style.alignContent = "center"
 }
 
-var date = new Date();
+/*var date = new Date();
 
     if(date.getHours() <= 9){
         hours.textContent = `0${date.getHours()}`;
@@ -54,7 +54,7 @@ var date = new Date();
     else if(date.getSeconds() >= 10){
         seconds.textContent = date.getSeconds();
     }
-
+*/
 var bestClips = [
     "./images/Chinese accent.mp4",
     "./images/gow.mp4",

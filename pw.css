@@ -275,9 +275,7 @@ body{
 }
 
 .head{
-    background-image: linear-gradient(360deg, aqua, white);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 @keyframes zooms{
@@ -304,22 +302,28 @@ body{
     justify-content: center;
     justify-items: center;
     gap: 2rem;
-    perspective: 800px;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+.card-c::-webkit-scrollbar{
+    display: none;
 }
 
 .card{
     border: medium solid aqua !important;
-    width: 25%;
-    background-color: rgb(22, 22, 22) !important;
+    width: 350px;
+    height: auto !important;
     color: white;
     border-radius: 20px;
-    transform: rotateX(50deg);
     user-select: none;
+    transition: all 1s;
 }
 
 .card:hover{
     cursor: pointer;
-    margin: 2% 2%;
+    transform: translateY(-4%) translateX(-4%);
+    margin: 0% 3%;
 }
 
 .card-i{
@@ -359,6 +363,10 @@ body{
     transition: all 1s;
 }
 
+.cube:hover{
+    animation: animate 1s linear infinite;
+}
+
 @keyframes animate{
     0%{
         transform: rotateX(-15deg) rotateY(0deg);
@@ -383,7 +391,6 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(#151515, aqua);
     transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
 }
 
@@ -398,17 +405,17 @@ body{
 }
 
 .sp1{
-    background-image: url("./images/pfp.png") !important;
+    background-image: url("./images/reds.png");
 }
 
 .sp2{
-    background-image: url("./images/ste.png") !important;
+    background-image: url("./images/ste.png");
 }
 
 .sp3{
-    background-image: url("./images/ste3.png") !important;
+    background-image: url("./images/ste3.png");
 }
 
 .sp4{
-    background-image: url("./images/ste2.png") !important;
+    background-image: url("./images/ste2.png");
 }
