@@ -22,6 +22,7 @@
 }
 
 *{
+    user-select: none;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -297,22 +298,37 @@ body{
 }
 
 .card-c{
-    display: flex !important;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    transition: all 1s;
+}
+
+.card-c > .cc {
+    display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    scroll-snap-align: center;
     gap: 2rem;
-    height: 700px;
-    overflow-y: scroll;
+    width: 100%;
 }
 
 .card-c::-webkit-scrollbar{
-    display: none;
+    height: 10px;
+}
+
+.card-c::-webkit-scrollbar-thumb{
+    background-color: aqua;
+}
+
+.card-c::-webkit-scrollbar-track{
+    background-color: black;
 }
 
 .card{
     border: medium solid aqua !important;
-    width: 350px;
+    width: 320px;
     height: auto !important;
     color: white;
     border-radius: 20px;
@@ -360,7 +376,7 @@ body{
     transform-style: preserve-3d;
     transform: rotateX(-15deg);
     animation: animate 10s linear infinite;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .cube:hover{

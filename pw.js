@@ -16,6 +16,7 @@ var cube = document.getElementsByClassName("cube")
 var cards = document.getElementsByClassName("card-c")
 var card = document.getElementsByClassName("card")
 var conter = document.getElementsByClassName("jo")
+var cubec = document.getElementById("cubec")
 
 if(window.innerWidth < 1115){
     for(let y = 0; y < slideImg.length; y++){
@@ -27,7 +28,7 @@ if(window.innerWidth < 1115){
         card[i].style.transform = "rotateX(0deg)"
     }
     conter[0].style.maxWidth = "100%"
-    cube[0].remove();
+    cubec.remove()
     cards[0].style.flexDirection = "column"
     cards[0].style.alignContent = "center"
 }
@@ -67,3 +68,35 @@ var bestClips = [
 card[0].ondblclick = function redirect0(){window.open("https://callofduty.fandom.com/wiki/Simon_%22Ghost%22_Riley", "_blank")}
 card[1].ondblclick = function redirect1(){window.open("https://reddead.fandom.com/wiki/John_Marston","_blank")}
 card[2].ondblclick = function redirect2(){window.open("https://godofwar.fandom.com/wiki/Kratos","_blank")}
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+
+let interval = null;
+
+var heck = document.querySelectorAll(".heck")
+heck.forEach((item) => {
+    item.onmouseover = event => {  
+  let iteration = 0
+  
+  clearInterval(interval)
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * letters.length)]
+      })
+      .join("");
+
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval)
+    }
+    
+    iteration += 1 / 3;
+  }, 10);
+}
+});
