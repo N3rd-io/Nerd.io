@@ -1,206 +1,220 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="N3rd Personal Website">
-    <meta property="og:image" content="https://nerdco.000webhostapp.com/images/pfp.png">
-    <meta property="og:description" content="Nerd's Personal Website, i think. Maybe... idk just click the link dude.">
-    <meta property="og:url" content="https://nerdco.000webhostapp.com/" />
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="pw.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossOrigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.esm.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nerd.Inc</title>
 </head>
 <body>
-    <div class="nav-r pye-1 pxe-4">
-        <a data-value="Nerd.Inc" class="heck" href="#" style="float: left;color: aqua;">Nerd.Inc</a>
-        <a data-value="Contact" class="heck" href="#contact">Contact</a>
-        <a data-value="About" class="heck" href="#about">About</a>
-        <a data-value="Gallery" class="heck" href="#gallery">Gallery</a>
-        <a data-value="Home" class="heck" href="#me">Home</a>
-    </div>
-    <div style="background-image: url(./images/bg.png);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: bottom;">
-        <div class="white p-5 ilike" id="me">
-            <h3 data-value="N3rd" class="head heck" style="font-size: 150%;text-decoration: underline aqua;">N3rd</h3>
-            <p style="font-size: 150%;">I like to <span class="liket"></span></p>
-            <p style="font-size: 150%;">I like <span class="like"></span></p>
-            <p style="font-size: 150%;">I play <span class="pley"></span></p>
-            <p style="font-size: 150%;">I am curretly <span class="stetus"></span></p>
-            <div>
-                <h2 data-value="Search The Internet" class="head heck" style="text-align: center;">Search The Internet</h2>
-                <script async src="https://cse.google.com/cse.js?cx=667f21a53333a4cad">
-                </script>
-                <div class="gcse-search"></div>
+    
+    <header>
+        
+
+        <div id="nav" class="nav">
+            <div class="nav-corners">
+                <div class="nav-bot-left"></div>
+                <div class="nav-bot-right"></div>
+            </div>
+            <div class="nav-links">
+                <p class="nav-name">Nerd.Inc</p>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contacts</a>
+                </div>
             </div>
         </div>
-        <div id="about" class="p-4 white">
-            <div class="p-4" style="margin-top: 2%;display: flex;justify-content: space-around;align-items: center;">
-                <div class="jo p-4" style="max-width: 70%;text-align: justify;border-radius: 20px;border: solid medium aqua;height: fit-content;">
-                    <h3 data-value="Welcome" class="head heck">Welcome</h3>
-                    <p>Sup Nerds, Welcome to my little site lol ummm soo yeah thats pretty much it you can find ways to contact me in <a href="#contact" style="text-decoration: none;color: aqua;">Contacts</a>, That's pretty much it on this paragraph.</p>
-                    <h3 data-value="About me" class="head heck">About me</h3>
-                    <p>A kid working hard to become an IT specialist, living in mars and watching little earth rotate on its axis. I always hated Mathematics but i'm tryinng to learn it now because it's a must if you want to specialise on IT. I might link my social medias in <a href="#contact" style="text-decoration: none;color: aqua;">Contacts</a>.</p>
-                    <h3 data-value="My Favourite Quotes" class="head heck">My Favourite Quotes</h3>
-                    <span>"</span><span class="auto-type"></span><span>"</span>
+
+
+        <div id="dropdown" class="dropdown">
+            <div class="nav-corners">
+                <div class="nav-bot-left"></div>
+                <div class="nav-bot-right"></div>
+            </div>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <p class="nav-name">Nerd.Inc</p>
+                <div class="dropdown-cont"><b><i class="fa-solid fa-bars"></i></b>
+                    <div id="dropdown-links" class="dropdown-links">
+                        <p><a href="#projects">Projects</a></p>
+                        <p><a href="#services">Services</a></p>
+                        <p><a href="#about">About</a></p>
+                        <p><a href="#contacts">Contacts</a></p>
+                    </div>
                 </div>
-                <div id="cubec" style="margin-left: 10%;">
-                    <div class="cube">
-                        <div class="top"></div>
-                        <div>
-                            <span class="sp1" style="--i:0;"></span>
-                            <span class="sp2" style="--i:1;"></span>
-                            <span class="sp3" style="--i:2;"></span>
-                            <span class="sp4" style="--i:3;"></span>
+            </div>
+        </div>
+
+
+        <div class="top">
+            <h1 class="top-h"> NASSIR IBRAHIM PETER </h1>
+            <p class="top-p"> I like to <span class="like-to"> Play video games </span> </p>
+            <script>
+                var typed = new Typed(".like-to", {
+                    strings: [
+                    "Watch Movies.",
+                    "Play Video Games.",
+                    "Learn.",
+                    "Code.",
+                    ],
+                    typeSpeed: 100,
+                    backSpeed: 30,
+                    loop: true,
+                })
+            </script>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        
+    <div class="container">
+        <div class="container-corners">
+            <div class="container-top">
+                <div class="container-top-l"></div>
+            </div>
+            <div class="container-bot">
+                <div class="container-bot-r"></div>
+            </div>
+        </div>
+        <div class="container-cont">
+            <div class="container-items">
+                <h2>Welcome</h2>
+                <p>Sup Nerds, Welcome to my little site lol ummm soo yeah thats pretty much it you can find ways to contact me in <a href="#contact" style="text-decoration: none;color: aqua;">Contacts</a>, That's pretty much it on this paragraph.</p>
+                <h2>About me</h2>
+                <p>A kid working hard to become an IT specialist, living in mars and watching little earth rotate on its axis. I always hated Mathematics but i'm tryinng to learn it now because it's a must if you want to specialise on IT. I might link my social medias in <a href="#contact" style="text-decoration: none;color: aqua;">Contacts</a>.</p>
+                <h2>My Favourite Quotes</h2>
+                <p>"</span><span class="auto-type"></span><span>"</p>
+            </div>
+            <script>
+                var typed = new Typed(".auto-type", {
+                    strings: [
+                    "Choices have consiqunces.",
+                    "The extraordinary is in what we do, not who we are.",
+                    "A Spartan Never Lets His Back Hit The Ground.",
+                    "If You Win Power, Remember Why You Wanted It.",
+                    "You can't run away from who you are, but what you can do is run toward who you want to be.",
+                    "With great power, comes great resposibility.",
+                    "A Journey of a Thousand miles begins with a single step."
+                    ],
+                    typeSpeed: 100,
+                    backSpeed: 30,
+                    loop: true,
+                })
+            </script>
+        </div>
+    </div>
+
+
+    <div id="card-c" class="card-c">
+        <div id="cards" class="cards">
+            <div class="card-b">
+                <div class="card">
+                    <div class="card-corners">
+                        <div class="card-top">
+                            <div class="card-top-l"></div>
+                            <div class="card-top-r"></div>
+                        </div>
+                        <div class="card-bot">
+                            <div class="card-bot-l"></div>
+                            <div class="card-bot-r"></div>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <div class="card-cont">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque labore iste perspiciatis odio recusandae ratione fuga voluptas soluta praesentium voluptatem iure odit est quidem error eum, sequi quod repellendus.</p>
+                            <a class="card-button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-b">
+                <div class="card">
+                    <div class="card-corners">
+                        <div class="card-top">
+                            <div class="card-top-l"></div>
+                            <div class="card-top-r"></div>
+                        </div>
+                        <div class="card-bot">
+                            <div class="card-bot-l"></div>
+                            <div class="card-bot-r"></div>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <div class="card-cont">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque labore iste perspiciatis odio recusandae ratione fuga voluptas soluta praesentium voluptatem iure odit est quidem error eum, sequi quod repellendus.</p>
+                            <a class="card-button" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-b">
+                <div class="card">
+                    <div class="card-corners">
+                        <div class="card-top">
+                            <div class="card-top-l"></div>
+                            <div class="card-top-r"></div>
+                        </div>
+                        <div class="card-bot">
+                            <div class="card-bot-l"></div>
+                            <div class="card-bot-r"></div>
+                        </div>
+                    </div>
+                    <div class="card-items">
+                        <div class="card-cont">
+                            <h1>Lorem</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque labore iste perspiciatis odio recusandae ratione fuga voluptas soluta praesentium voluptatem iure odit est quidem error eum, sequi quod repellendus.</p>
+                            <a class="card-button" href="#">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="card-controls" class="card-controls">
+            <a class="card-prev" id="card-prev">Prev</a>
+            <a onclick="auto_next()" class="card-next" id="card-next">Next</a>
+        </div>
     </div>
-    <div id="gallery" style="border-bottom: aqua medium solid;border-top: aqua medium solid;background-image: url(./images/bg3.png);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: top;">
-        <div>
-            <h2 data-value="AI Generated Images" class="head heck" style="text-align: center;padding-bottom: 1%;padding-top: 3%;">AI Generated Images</h2>
-            <div class="card-c p-4">
-                <div class="cc">
-                    <div class="card">
-                        <img class="card-i" src="./images/ai2.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/pfp.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai4.png">
-                    </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <div style="width: fit-content;" class="container">
+            <div class="container-corners">
+                <div class="container-top">
+                    <div class="container-top-l"></div>
                 </div>
-                <div class="cc">
-                    <div class="card">
-                        <img class="card-i" src="./images/ai5.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai6.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai3.png">
-                    </div>
+                <div class="container-bot">
+                    <div class="container-bot-r"></div>
                 </div>
-                <div class="cc">
-                    <div class="card">
-                        <img class="card-i" src="./images/ai7.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai8.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai9.png">
-                    </div>
-                </div>
-                <div class="cc">
-                    <div class="card">
-                        <img class="card-i" src="./images/ai0.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai02.png">
-                    </div>
-                    <div class="card">
-                        <img class="card-i" src="./images/ai3.png">
-                    </div>
+            </div>
+            <div class="container-cont">
+                <div class="container-items">
+                    <h3 data-value="Contact me" style="text-align: center;" class="head heck" id="contact">Contact me</h3>
+                    <p>You can contact me through these three ways if you need anything.</p>
+                    <p><a target="_blank" href="https://discord.com" style="text-decoration: none;color: white;"><i class="fa-brands fa-discord" style="color: aqua;"></i> Discord: Nerd#3660</a></p>
+                    <p><a href="mailto:coddisc7@gmail.com" style="text-decoration: none;color: white;"><i class="fa-solid fa-envelope" style="color: aqua;"></i> E-mail: coddisc7@gmail.com</a></p>
+                    <P><a href="tel:+255776243398" style="text-decoration: none;color: white;"><i class="fa-solid fa-phone-volume" style="color: aqua;"></i> Phone: +255-776-243-398</a></P>
+                    <P><a target="_blank" href="https://web.whatsapp.com" style="text-decoration: none;color: white;"><i class="fa-brands fa-whatsapp" style="color: aqua;"></i> WhatsApp: +255-776-243-398</a></P>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="p-2 white" style="background-image: url(./images/bg2.png);background-repeat: no-repeat;background-size: cover;background-attachment: fixed;background-position: top;">
-        <div class="p-2" style="margin-top: 2%;display: flex;justify-content: flex-start;">
-            <div class="jo p-4" style="border: medium solid aqua;border-radius: 20px;">
-                <h3 data-value="Contact me" style="text-align: center;" class="head heck" id="contact">Contact me</h3>
-                <p>You can contact me through these three ways if you need anything.</p>
-                <p><a target="_blank" href="https://discord.com" style="text-decoration: none;color: white;"><i class="fa-brands fa-discord" style="color: aqua;"></i> Discord: Nerd#3660</a></p>
-                <p><a href="mailto:coddisc7@gmail.com" style="text-decoration: none;color: white;"><i class="fa-solid fa-envelope" style="color: aqua;"></i> E-mail: coddisc7@gmail.com</a></p>
-                <P><a href="tel:+255776243398" style="text-decoration: none;color: white;"><i class="fa-solid fa-phone-volume" style="color: aqua;"></i> Phone: +255-776-243-398</a></P>
-                <P><a target="_blank" href="https://web.whatsapp.com" style="text-decoration: none;color: white;"><i class="fa-brands fa-whatsapp" style="color: aqua;"></i> WhatsApp: +255-776-243-398</a></P>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid p-2 black-bg white" style="box-shadow: 0 0 40px aqua;top: 0%;">
-        <p style="float: left;">&copy;Copyright Nerd.Inc <span style="color: aqua;">2023</span></p>
-        <p style="float: right;">All rights reserved.</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: [
-            "Choices have consiqunces.",
-            "The extraordinary is in what we do, not who we are.",
-            "A Spartan Never Lets His Back Hit The Ground.",
-            "If You Win Power, Remember Why You Wanted It.",
-            "You can't run away from who you are, but what you can do is run toward who you want to be.",
-            "With great power, comes great resposibility.",
-            "A Journey of a Thousand miles begins with a single step."
-            ],
-            typeSpeed: 100,
-            backSpeed: 30,
-            loop: true,
-        })
-        var type = new Typed(".liket", {
-            strings: [
-            "Code.",
-            "Learn.",
-            "Play Video Games.",
-            "Discover."],
-            typeSpeed: 200,
-            backSpeed: 100,
-            loop: true,
-        })
-        var write = new Typed(".like", {
-            strings: [
-            "Mathematics.",
-            "Call Of Duty.",
-            "Programming.",
-            "Movies."],
-            typeSpeed: 200,
-            backSpeed: 100,
-            loop: true,
-        })
-        var play = new Typed(".pley", {
-            strings: [
-            "Minecraft.",
-            "Call Of Duty.",
-            "Call Of Duty BO2.",
-            "Grand Theft Auto 5.",
-            "Watch Dogs."],
-            typeSpeed: 200,
-            backSpeed: 100,
-            loop: true,
-        })
-        var time = new Date()
-        var stetus;
-        if(time.getHours() > 4 && time.getHours() < 11){
-            stetus = "Offline....";
-        }
-        else{
-            stetus = "Online....";
-        }
 
-        if(stetus == "Online...."){
-            document.getElementsByClassName("stetus")[0].style.color = "green";
-        }
-        else{
-            document.getElementsByClassName("stetus")[0].style.color = "red";
-        }
+    </footer>
 
-        var status = new Typed(".stetus", {
-            strings: [stetus],
-            typeSpeed: 200,
-            backSpeed: 100,
-            loop: true,
-        })
-    </script>
-    <script src="pw.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>
