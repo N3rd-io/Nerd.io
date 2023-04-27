@@ -190,11 +190,13 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
 
 .top-h {
+    padding: 2% 4%;
+    background-color: black;
     color: white;
 }
 
