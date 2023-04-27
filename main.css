@@ -416,8 +416,8 @@ header {
 }
 
 .card-button:hover {
-    color: aqua;
-    background-color: black;
+    color: black;
+    background-color: aqua;
 }
 
 .card-controls {
