@@ -300,6 +300,11 @@ header {
     flex-direction: column;
 }
 
+.card-c-h {
+    color: white;
+    text-decoration: underline aqua;
+}
+
 .cards::-webkit-scrollbar {
     display: none;
 }
