@@ -220,6 +220,12 @@ header {
     border: solid medium aqua;
     width: 80%;
     margin: 10% auto;
+    transition: all 0.5s;
+}
+
+.container:hover {
+    transform: translate(-10px, -15px);
+    box-shadow: 20px 25px 20px black;
 }
 
 .container-corners {
@@ -260,6 +266,7 @@ header {
     position: relative;
     padding: 2% 2%;
     background-color: black;
+    transition: all 0.3s;
 }
 
 .container-items {
@@ -384,6 +391,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -392,9 +400,10 @@ header {
 
 .card-cont {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    text-align: center;
     height: 90%;
     width: 90%;
     border: solid medium aqua;
@@ -406,7 +415,7 @@ header {
 }
 
 .card-cont:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .card-button {
