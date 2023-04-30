@@ -33,7 +33,7 @@ html, body {
     scroll-behavior: smooth;
     margin: 0;
     background-color: rgb(32,35,47);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 p {
@@ -145,6 +145,7 @@ header {
     background-color: black;
     border: solid medium aqua;
     width: fit-content;
+    margin-right: 50%;
     padding: 10px 10px;
     transform: scale(0);
     transition: all 300ms;
@@ -175,18 +176,19 @@ header {
 
 .dropdown-menu {
     background-color: black;
-    width: 100%;
+    width: 80%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1% 5%;
+    padding: 1% 2%;
     user-select: none;
 }
 
 .dropdown-cont {
     color: aqua;
     font-size: large;
+    width: fit-content;
 }
 
 .top {
@@ -213,6 +215,15 @@ header {
     color: aqua;
 }
 
+.dir {
+    text-decoration: none;
+    color: white;
+}
+
+.dir+span {
+    color: aqua;
+}
+
 /* end header css */
 
 
@@ -225,6 +236,21 @@ header {
     width: 80%;
     margin: 10% auto;
     transition: all 0.5s;
+}
+
+.certificate-c {
+    position: relative;
+    border: solid medium aqua;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    transition: all 0.5s;
+}
+
+.certificate-c:hover {
+    transform: translate(-10px, -15px);
+    box-shadow: 20px 25px 20px black;
 }
 
 .container:hover {
@@ -280,6 +306,18 @@ header {
     background-color: black;
 }
 
+.certificate-container-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: solid medium aqua;
+    padding: 2% 2%;
+    color: white;
+    background-color: black;
+}
+
 .about-container-items {
     display: flex;
     justify-content: space-between;
@@ -297,7 +335,7 @@ header {
 
 .container-left {
     width: 35%;
-    padding: 0 4%;
+    padding-right: 2%;
     border-right: solid medium aqua;
 }
 
@@ -317,7 +355,7 @@ header {
 }
 
 .pfp {
-    border: solid medium black;
+    border: solid thick black;
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -531,5 +569,24 @@ header {
     background-color: aqua;
 }
 
+
+.pd {
+    padding: 2% 4%;
+    color: white;
+}
+
+.pd span {
+    color: aqua;
+}
+
+.certificate {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.certificate-items {
+    width: 70%;
+}
 
 /* end main css */
