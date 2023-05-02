@@ -46,8 +46,9 @@ p {
 /* header css */
 
 header {
-    background-image: url(./assets/bg.jpg);
+    background-image: url(./assets/bg2.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     height: 100vh;
     border-bottom: solid medium aqua;
@@ -391,11 +392,12 @@ header {
 .cards {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     margin: 4% auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -418,7 +420,7 @@ header {
 .card-b {
     scroll-snap-type: mandatory;
     scroll-snap-align: center;
-    margin: 0% 2%;
+    margin: 2% 2%;
 }
 
 .card {

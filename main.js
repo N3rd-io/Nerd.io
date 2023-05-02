@@ -52,24 +52,23 @@ let auto = card.length
 
 card_prev.onclick = function(){
     if(auto == card.length){
-        cards.scrollLeft += 800
+        cards.scrollTop += 1000
         auto = 1
     }
     else{
         auto += 1
-        cards.scrollLeft -= 200
-        document.getElementById('test').innerHTML = auto;
+        cards.scrollTop -= 600
     }
 }
 
 function auto_next(){
     if(auto == 1){
-        cards.scrollLeft -= 800
+        cards.scrollTop -= 1000
         auto = card.length
     }
     else{
         auto -= 1
-        cards.scrollLeft += 200
+        cards.scrollTop += 600
     }
 }
 
@@ -97,6 +96,7 @@ addEventListener('resize', function(){
         container_left.style.width = '35%';
         container_right.style.width = '65%';
         cards.style.width = '100%';
+        cards.style.height = 'max-content';
         cards.style.overflow = 'visible';
         cards.style.justifyContent = 'center';
         cards.style.gap ='10px';
@@ -124,6 +124,7 @@ else{
     container_left.style.width = '35%';
     container_right.style.width = '65%';
     cards.style.width = '100%';
+    cards.style.height = 'max-content';
     cards.style.overflow = 'visible';
     cards.style.justifyContent = 'center';
     cards.style.gap ='10px';
