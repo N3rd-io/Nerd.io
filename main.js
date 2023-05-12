@@ -78,6 +78,7 @@ addEventListener('resize', function(){
     const new_window = window.innerWidth
     if(new_window < 1260){
         container_left.style.width = '90%';
+        container_left.style.margin = 'auto';
         container_right.style.display = 'none';
         container_left.style.borderRight = 'none';
         about_container.style.flexDirection = 'column';
@@ -92,6 +93,7 @@ addEventListener('resize', function(){
     else{
         about_container.style.flexDirection = 'row';
         container_left.style.borderRight = 'solid medium aqua';
+        container_left.style.margin = 'unset';
         container_right.style.display = 'block';
         container_left.style.width = '35%';
         container_right.style.width = '65%';
@@ -106,6 +108,7 @@ addEventListener('resize', function(){
 
 if(window.innerWidth < 1260){
     container_left.style.width = '90%';
+    container_left.style.margin = 'auto';
     container_right.style.display = 'none';
     container_left.style.borderRight = 'none';
     about_container.style.flexDirection = 'column';
@@ -120,6 +123,7 @@ if(window.innerWidth < 1260){
 else{
     about_container.style.flexDirection = 'row';
     container_left.style.borderRight = 'solid medium aqua';
+    container_left.style.margin = 'unset';
     container_right.style.display = 'block';
     container_left.style.width = '35%';
     container_right.style.width = '65%';
@@ -137,12 +141,27 @@ let checked = document.getElementById('status');
 let check;
 
 if(hour < 5 || hour > 10){
-    check = "Online.";
+    check = "online";
+}
+
+else{
+    check = "offline";
+};
+
+let nassir = {
+    firstName: "Nassir",
+    middleName: "Ibrahim",
+    lastName: "Peter",
+    status: check,
+}
+
+if(nassir.status == "online"){
+    check = "Online."
     checked.style.color = "green";
 }
 
 else{
-    check = "Offline.";
+    check = "Offline."
     checked.style.color = "red";
 }
 
