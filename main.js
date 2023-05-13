@@ -173,3 +173,17 @@ var typed = new Typed(".status", {
     backSpeed: 30,
     loop: true,
 })
+
+let greet = document.getElementById("greet")
+
+if ( hour >= 0 && hour <= 11 ) {
+    greet.innerText = "Good Morning!"
+}
+
+else if ( hour >= 12 && hour <= 16 ) {
+    greet.innerText = "Good Afternoon!"
+}
+
+else if ( hour >= 17 && hour <= 23) {
+    greet.innerText = "Good Evening!"
+}
