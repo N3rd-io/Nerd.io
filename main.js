@@ -52,7 +52,7 @@ let auto = card.length
 
 card_prev.onclick = function(){
     if(auto == card.length){
-        cards.scrollTop += 1000
+        cards.scrollTop += 2000
         auto = 1
     }
     else{
@@ -61,9 +61,9 @@ card_prev.onclick = function(){
     }
 }
 
-function auto_next(){
+function next(){
     if(auto == 1){
-        cards.scrollTop -= 1000
+        cards.scrollTop -= 2000
         auto = card.length
     }
     else{
@@ -72,7 +72,7 @@ function auto_next(){
     }
 }
 
-setInterval(auto_next, 5000)
+setInterval(next, 5000)
 
 addEventListener('resize', function(){
     const new_window = window.innerWidth
