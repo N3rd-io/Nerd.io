@@ -29,6 +29,14 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    background-color: rgb(32,35,47);
+    overflow-x: clip;
+    zoom: 80%;
+}
+
 html, body {
     scroll-behavior: smooth;
     margin: 0;
@@ -46,12 +54,22 @@ p {
 /* header css */
 
 header {
-    background-image: url(./assets/bg2.jpg);
+    background-image: url(./assets/bg5.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
     border-bottom: solid medium aqua;
+    overflow: hidden;
+}
+
+.active::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: aqua;
+    transition: all 0.3s;
 }
 
 .nav {
@@ -91,7 +109,7 @@ header {
     color: white;
 }
 
-.links a::after {
+.links a:not(.active)::after {
     content: "";
     display: block;
     width: 0;
@@ -100,7 +118,7 @@ header {
     transition: all 0.3s;
 }
 
-.links a:hover::after {
+.links a:not(.active):hover::after {
     width: 80%;
 }
 
@@ -198,6 +216,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
     width: 100%;
 }
