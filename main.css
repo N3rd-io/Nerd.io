@@ -58,7 +58,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    height: 125vh;
     border-bottom: solid medium aqua;
     overflow: hidden;
 }
@@ -609,6 +609,67 @@ header {
 
 .certificate-items {
     width: 70%;
+}
+
+.projects-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-c {
+    position: relative;
+    border: solid medium aqua;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    transition: all 0.5s;
+}
+
+.project-c:hover {
+    transform: translate(-10px, -15px);
+    box-shadow: 20px 25px 20px black;
+}
+
+.project-container-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: solid medium aqua;
+    padding: 6% 2%;
+    color: white;
+    background-color: black;
+}
+
+.project {
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.project-items {
+    width: 70%;
+}
+
+.project-items a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1% 4%;
+    border: solid medium aqua;
+    margin-top: 4%;
+    transition: all .3s;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+
+.project-items a:hover {
+    background-color: aqua;
+    color: black;
 }
 
 /* end main css */

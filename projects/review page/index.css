@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+::selection {
+    background-color: aqua;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: aqua; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(13,208,150); 
+}
+
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32,35,47);
+    height: -webkit-fill-available;
+    overflow-x: hidden;
+}
+
+form {
+    position: relative;
+    background-color: black;
+    width: fit-content;
+    border: solid medium aqua;
+    zoom: 80%;
+    margin-top: 8vh;
+}
+
+.form-cont {
+    background-color: black;
+    position: relative;
+    padding: 4% 4%;
+    color: white;
+    border: solid medium aqua;
+}
+
+.form-items {
+    padding: 2% 4%;
+    border: solid medium aqua;
+}
+
+input {
+    padding: 10px;
+    font-size: 17px;
+    width: 97%;
+    border: solid thin aqua;
+    background-color: #111111;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    width: 96%;
+    resize: vertical;
+    background-color: #111111;
+    border: solid thin aqua;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    all: unset;
+    text-align: center;
+    padding: 2% 4%;
+    background-color: black;
+    border: solid thin aqua;
+    width: 25%;
+    transition: all 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: aqua;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+    border: solid thin aqua;
+    display: inline-block;
+}
+
+.tbox {
+    height: 30px;
+    width: 30px;
+    border: solid thin aqua;
+    display: inline-block;
+    background-color: aqua;
+}
+
+#fbox {
+    background-color: aqua;
+}
+
+.boxes span {
+    font-size: 28px;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.container-corners {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.container-top {
+    height: 50%;
+    width: 100%;
+}
+
+.container-top-l {
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    transform: translate(-14px, -14px);
+    clip-path: polygon(0 0, 85% 0, 100% 15%, 8% 100%, 0 75%);
+}
+
+.container-bot {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+    width: 100%;
+}
+
+.container-bot-r {
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    transform: translate(14px, 14px);
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 15% 100%, 0 85%);
+}
+
+.button span {
+    transition: all 0.3s;
+}
+
+.button span:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.reviews-cont {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 122vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.review-cont {
+    margin-top: 8vh;
+    width: 60%;
+    color: white;
+    padding: 2% 2%;
+    background-color: black;
+    max-height: 65%;
+    height: 100%;
+}
+
+.review-cont h1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.review-cont h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: aqua;
+    width: 80%;
+}
+
+.review-cont p {
+    width: fit-content;
+}
+
+.reviews-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-close {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.close {
+    font-size: 17px;
+    margin: 0%;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.username {
+    display: inline-block;
+    margin: 0;
+}
+
+.username::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: aqua;
+    width: 80%;
+}
+
+.user-review-box {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: solid thin aqua;
+}
+
+.user-review {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.review-c {
+    overflow-y: auto;
+    max-height: 78%;
+}
