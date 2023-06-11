@@ -1,0 +1,1197 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+@font-face {
+    font-family: 'avion';
+    src: url('./avion/Aviano Future W01 Regular/Aviano\ Future\ W01\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'proxima';
+    src: url('./proxima/Proxima\ Nova\ Font.otf') format('opentype');
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4b4949;
+    border-radius: 1400px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #BF1E2E;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+header {
+    background-image: url('./assets/top.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section {
+    scroll-snap-align: center;
+}
+
+@media ( min-width: 1000px ) {
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 1% 2%;
+    }
+
+    main {
+        transition: all .3s;
+    }
+
+    .compr {
+        transform: translate3d(-70%, 0, 0);
+        overflow: hidden;
+        position: fixed;
+        transition: all .3s;
+    }
+
+    .nav img {
+        height: 80px;
+        width: 250px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .nav .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        transition: all .3s;
+    }
+
+    .nav .nav-links a:hover {
+        color: #4b4949;
+    }
+
+    .dropdown {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 1% 2%;
+    }
+
+    .dropdown img {
+        height: 80px;
+        width: 250px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .drop-links {
+        position: fixed;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: -webkit-fill-available;
+        height: 100vh;
+        margin: auto;
+        z-index: -999;
+        opacity: 0;
+        transition: all .3s;
+        overflow-y: scroll;
+    }
+
+    .drop-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        transition: all .3s;
+        text-align: center;
+        width: 68%;
+        padding: 20px;
+        margin: 0;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-color: #242424;
+        line-height: 2em;
+    }
+
+    .drop-links a:nth-child(1) {
+        border-top: none;
+    }
+
+    .drop-links a:hover {
+        color: #4b4949;
+    }
+
+    .icons {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        position: fixed;
+        gap: 20px;
+        padding: 0 2%;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 30%;
+    }
+
+    .icons div > a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 1400px;
+        background-color: white;
+        position: relative;
+    }
+
+    .icons > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: fit-content;
+    }
+
+    .icons .active {
+        background-color: transparent;
+        border: solid thin white;
+    }
+
+    .icons p {
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        color: white;
+        position: absolute;
+        z-index: -1;
+        margin: 0;
+        opacity: 0;
+        transition: all .1s linear;
+        user-select: none;
+    }
+
+    .icons > div > a:hover {
+        cursor: pointer;
+    }
+
+    .icons > div > a:hover + p {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+
+    .veng {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .veng h1 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+    }
+
+    .veng h2 {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        margin: 0;
+    }
+
+    .veng hr {
+        width: 80%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        background-color: black;
+    }
+
+    .veng h3 {
+        font-size: 26px;
+        font-weight: 400;
+        font-family: 'avion';
+        font-style: normal;
+        margin: 0;
+        line-height: 2.4em;
+    }
+
+    .veng a {
+        all: unset;
+        padding: 13px 26px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        color: black;
+        text-align: center;
+        border: solid thin #4b4949;
+        margin-top: 2%;
+        transition: all .3s;
+        border-radius: 3px;
+    }
+
+    .veng a:hover {
+        color: white;
+        background-color: #4b4949;
+        cursor: pointer;
+    }
+
+    .galleryin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('./assets/interior.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galleryex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('./assets/exterior.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galleryex a {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'avion';
+        font-style: normal;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 3px;
+        transition: all .3s;
+    }
+
+    .galleryex a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .galleryin a {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'avion';
+        font-style: normal;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 3px;
+        transition: all .3s;
+    }
+
+    .galleryin a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .videoshow {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .videoshow video {
+        height: inherit;
+        width: -webkit-fill-available;
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .videoshow p {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        border-radius: 3px;
+        padding: 20px 20px;
+        color: black;
+        background-color: white;
+        user-select: none;
+    }
+
+    .videoshow div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: -webkit-fill-available;
+    }
+
+    .fullb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .fullb img {
+        width: 60%;
+        object-fit: contain;
+    }
+
+    .fullb a {
+        all: unset;
+        padding: 13px 26px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        color: black;
+        text-align: center;
+        border: solid thin #4b4949;
+        margin-top: 2%;
+        transition: all .3s;
+        border-radius: 3px;
+    }
+
+    .fullb a:hover {
+        cursor: pointer;
+        background-color: #4b4949;
+        color: white;
+    }
+
+    .dot {
+        transition: all .3s;
+    }
+
+    #subscribe {
+        scroll-snap-align: start;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        padding: 8% 0;
+    }
+
+    .form form {
+        background-color: rgba(20,20,20,.2);
+        padding: 2% 4%;
+        width: 60%;
+        text-align: center;
+    }
+
+    .form form h1 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+    }
+
+    .form form h2 {
+        font-size: 15px;
+        font-family: 'proxima';
+        font-style: normal;
+    }
+
+    .form form p {
+        opacity: .8;
+        font-size: 12px;
+        font-family: 'proxima';
+        font-style: normal;
+    }
+
+    .form form input {
+        padding: 13px;
+        width: 40%;
+        height: -webkit-fill-available;
+    }
+
+    .form form input:focus {
+        outline: none;
+    }
+
+    .form form * {
+        margin: 2% auto;
+    }
+
+    .form form button {
+        all: unset;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        display: inline-block;
+        padding: 1% 3%;
+        width: auto;
+        text-align: center;
+        height: 24px;
+        color: black;
+        border: solid thin #242424;
+        transition: all .3s;
+    }
+
+    .form form button:hover {
+        color: white;
+        cursor: pointer;
+        background-color: #242424;
+    }
+    
+    .backtop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        height: 56px;
+        width: 56px;
+        border-radius: 1400px;
+        margin: auto;
+        top: -26px;
+        background-color: white;
+        box-shadow: 0 0 6px black;
+    }
+
+    .backtop * {
+        font-size: 12px;
+        font-weight: 600;
+        font-family: 'avion';
+        font-style: normal;
+        margin: 0;
+    }
+
+
+    .footer-c {
+        background-color: rgba(20,20,20,.2);
+        text-align: center;
+        padding-bottom: 4%;
+    }
+
+    .footer-c a:nth-child(1) {
+        text-decoration: none;
+        color: black;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: -webkit-fill-available;
+        margin: 3% auto;
+    }
+
+    .socials * {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        text-decoration: none;
+        color: black;
+        transition: all .3s;
+    }
+
+    .socials:hover *:not(:hover) {
+        color: gray;
+    }
+
+    .socials a:hover  {
+        color: black;
+    }
+
+    .footer > h1 {
+        font-size: 26px;
+        font-weight: 400;
+        font-family: 'avion';
+        font-style: normal;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .contacts {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contacts div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 500px;
+        height: auto;
+    }
+
+    .contacts div:last-child {
+        margin-top: 4%;
+    }
+
+    .contacts div h1 {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'proxima';
+        font-style: normal;
+        line-height: 1.8em;
+    }
+
+    .contacts div p {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        line-height: 1.3em;
+        margin: 0;
+    }
+
+    .contacts div a {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        line-height: 1.3em;
+        margin-top: 3%;
+        color: black;
+    }
+
+    .end {
+        margin-top: 4%;
+    }
+
+    .end p {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: italic;
+    }
+
+    .end a {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: italic;
+        color: black;
+    }
+
+}
+
+
+
+@media ( max-width: 999px ) {
+
+    .nav {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 1% 2%;
+    }
+
+    main {
+        transition: all .3s;
+    }
+
+    .compr {
+        transform: translate3d(-70%, 0, 0);
+        overflow: hidden;
+        transition: all .3s;
+        position: fixed;
+    }
+
+    .nav img {
+        height: 80px;
+        width: 250px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .nav .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        transition: all .3s;
+    }
+
+    .nav .nav-links a:hover {
+        color: #4b4949;
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 1% 2%;
+        padding-right: 6%;
+    }
+
+    .dropdown img {
+        height: 60px;
+        width: 200px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .dropdown p {
+        font-size: 20px;
+    }
+
+    .dropdown p:hover {
+        cursor: pointer;
+    }
+
+    .drop-links {
+        position: fixed;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 68%;
+        height: 100vh;
+        margin: auto;
+        opacity: 0;
+        z-index: -999;
+        transition: all .3s;
+        overflow-y: scroll;
+    }
+
+    .drop-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        transition: all .3s;
+        text-align: center;
+        width: -webkit-fill-available;
+        padding: 20px;
+        margin: 0;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        border-color: #242424;
+        line-height: 2em;
+    }
+
+    .drop-links a:nth-child(1) {
+        border-top: none;
+    }
+
+    .drop-links a:hover {
+        color: #4b4949;
+    }
+
+    .icons {
+        display: none;
+        align-items: flex-end;
+        flex-direction: column;
+        position: fixed;
+        gap: 20px;
+        padding: 0 2%;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: 30%;
+    }
+
+    .icons div > a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 1400px;
+        background-color: white;
+        position: relative;
+    }
+
+    .icons > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: fit-content;
+    }
+
+    .icons .active {
+        background-color: transparent;
+        border: solid thin white;
+    }
+
+    .icons p {
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        color: white;
+        position: absolute;
+        z-index: -1;
+        margin: 0;
+        opacity: 0;
+        transition: all .1s linear;
+        user-select: none;
+    }
+
+    .icons > div > a:hover {
+        cursor: pointer;
+    }
+
+    .icons > div > a:hover + p {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+
+    .veng {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .veng h1 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+    }
+
+    .veng h2 {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        margin: 0;
+    }
+
+    .veng hr {
+        width: 80%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        background-color: black;
+    }
+
+    .veng h3 {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'avion';
+        font-style: normal;
+        margin: 0;
+        line-height: 2.4em;
+    }
+
+    .veng a {
+        all: unset;
+        padding: 13px 26px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        color: black;
+        text-align: center;
+        border: solid thin #4b4949;
+        margin-top: 2%;
+        transition: all .3s;
+        border-radius: 3px;
+    }
+
+    .veng a:hover {
+        color: white;
+        background-color: #4b4949;
+        cursor: pointer;
+    }
+
+    .galleryin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('./assets/interior.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galleryex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('./assets/exterior.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galleryex a {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'avion';
+        font-style: normal;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 3px;
+        transition: all .3s;
+    }
+
+    .galleryex a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .galleryin a {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'avion';
+        font-style: normal;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 3px;
+        transition: all .3s;
+    }
+
+    .galleryin a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .videoshow {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .videoshow video {
+        height: inherit;
+        width: -webkit-fill-available;
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .videoshow p {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        border-radius: 3px;
+        padding: 20px 20px;
+        color: black;
+        background-color: white;
+        user-select: none;
+    }
+
+    .videoshow div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: -webkit-fill-available;
+    }
+
+    .fullb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .fullb img {
+        width: 60%;
+        object-fit: contain;
+    }
+
+    .fullb a {
+        all: unset;
+        padding: 13px 26px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        color: black;
+        text-align: center;
+        border: solid thin #4b4949;
+        margin-top: 2%;
+        transition: all .3s;
+        border-radius: 3px;
+    }
+
+    .fullb a:hover {
+        cursor: pointer;
+        background-color: #4b4949;
+        color: white;
+    }
+
+    .dot {
+        transition: all .3s;
+    }
+
+    #subscribe {
+        scroll-snap-align: start;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        padding: 8% 0;
+    }
+
+    .form form {
+        padding: 2% 4%;
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+
+    .form form h1 {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+    }
+
+    .form form h2 {
+        font-size: 15px;
+        font-family: 'proxima';
+        font-style: normal;
+    }
+
+    .form form p {
+        opacity: .8;
+        font-size: 12px;
+        font-family: 'proxima';
+        font-style: normal;
+    }
+
+    .form form input {
+        padding: 13px;
+        width: 400px;
+        height: -webkit-fill-available;
+    }
+
+    .form form input:focus {
+        outline: none;
+    }
+
+    .form form * {
+        margin: 2% auto;
+    }
+
+    .form form button {
+        all: unset;
+        font-weight: 700;
+        font-family: 'avion';
+        font-style: normal;
+        display: inline-block;
+        padding: 1% 3%;
+        width: 400px;
+        height: 24px;
+        color: black;
+        border: solid thin #242424;
+        transition: all .3s;
+    }
+
+    .form form button:hover {
+        color: white;
+        cursor: pointer;
+        background-color: #242424;
+    }
+
+    .form form div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .backtop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        height: 56px;
+        width: 56px;
+        border-radius: 1400px;
+        margin: auto;
+        top: -26px;
+        background-color: white;
+        box-shadow: 0 0 6px black;
+    }
+
+    .backtop * {
+        font-size: 12px;
+        font-weight: 600;
+        font-family: 'avion';
+        font-style: normal;
+        margin: 0;
+    }
+
+
+    .footer-c {
+        background-color: rgba(20,20,20,.2);
+        text-align: center;
+        padding-bottom: 4%;
+    }
+
+    .footer-c a:nth-child(1) {
+        text-decoration: none;
+        color: black;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: -webkit-fill-available;
+        margin: 3% auto;
+    }
+
+    .socials * {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        text-decoration: none;
+        color: black;
+        transition: all .3s;
+    }
+
+    .socials:hover *:not(:hover) {
+        color: gray;
+    }
+
+    .socials a:hover  {
+        color: black;
+    }
+
+    .footer > h1 {
+        font-size: 26px;
+        font-weight: 400;
+        font-family: 'avion';
+        font-style: normal;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .contacts {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contacts div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 500px;
+        height: auto;
+        margin: 4% auto;
+    }
+
+    .contacts div h1 {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'proxima';
+        font-style: normal;
+        line-height: 1.8em;
+    }
+
+    .contacts div p {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        line-height: 1.3em;
+        margin: 0;
+    }
+
+    .contacts div a {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: normal;
+        line-height: 1.3em;
+        margin-top: 3%;
+        color: black;
+    }
+
+    .end {
+        margin-top: 4%;
+    }
+
+    .end p {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: italic;
+    }
+
+    .end a {
+        font-size: 19px;
+        font-weight: 500;
+        font-family: 'proxima';
+        font-style: italic;
+        color: black;
+    }
+
+}
+
