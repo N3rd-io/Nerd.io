@@ -64,7 +64,7 @@ section {
     }
 
     .compr {
-        transform: translate3d(-70%, 0, 0);
+        transform: translate3d(-79%, 0, 0);
         overflow: hidden;
         position: fixed;
         transition: all .3s;
@@ -632,7 +632,7 @@ section {
     }
 
     .compr {
-        transform: translate3d(-70%, 0, 0);
+        transform: translate3d(-79%, 0, 0);
         overflow: hidden;
         transition: all .3s;
         position: fixed;
@@ -822,7 +822,7 @@ section {
     }
 
     .veng h3 {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         font-family: 'avion';
         font-style: normal;
