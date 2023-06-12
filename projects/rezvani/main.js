@@ -1,9 +1,18 @@
 let dots = document.querySelectorAll('.dot');
 let description = document.querySelectorAll('.desc');
 let top1 = window.scrollY;
+let navMenu = document.getElementById('nav');
+let dropMenu = document.getElementById('dropdown');
 
 
 function turnblack() {
+
+    navMenu.style.backgroundColor = 'black';
+    navMenu.style.color = 'white';
+
+    dropMenu.style.backgroundColor = 'black';
+    dropMenu.style.color = 'white';
+
     for ( let x = 0; x < description.length; x++ ) {
         description[x].style.color = 'black';
     }
@@ -20,6 +29,13 @@ function turnblack() {
 }
 
 function turnwhite() {
+
+    navMenu.style.backgroundColor = 'white';
+    navMenu.style.color = 'black';
+
+    dropMenu.style.backgroundColor = 'white';
+    dropMenu.style.color = 'black';
+
     for ( let x = 0; x < description.length; x++ ) {
         description[x].style.color = 'white';
     }
@@ -199,3 +215,16 @@ expand.onclick = function expand() {
         isVisible = false;
     }
 }
+
+window.addEventListener('scroll', () => {
+    if ( window.scrollY > 0 ) {
+        navMenu.style.position = 'fixed';
+        navMenu.style.width = '-webkit-fill-available';
+        dropMenu.style.position = 'fixed';
+        dropMenu.style.width = '-webkit-fill-available';
+    }
+    else {
+        navMenu.style.position = 'static';
+        dropMenu.style.position = 'static';
+    }
+})

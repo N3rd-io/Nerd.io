@@ -29,7 +29,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
 }
 
 body {
@@ -45,10 +44,6 @@ header {
     scroll-snap-align: start;
 }
 
-section {
-    scroll-snap-align: center;
-}
-
 @media ( min-width: 1000px ) {
 
     .nav {
@@ -57,6 +52,9 @@ section {
         justify-content: space-between;
         background-color: white;
         padding: 1% 2%;
+        z-index: 99999;
+        transition: all .3s;
+        color: black;
     }
 
     main {
@@ -86,7 +84,7 @@ section {
 
     .nav .nav-links a {
         text-decoration: none;
-        color: black;
+        color: inherit;
         font-size: 16px;
         font-weight: 700;
         font-family: 'avion';
@@ -104,6 +102,12 @@ section {
         justify-content: space-between;
         background-color: white;
         padding: 1% 2%;
+        z-index: 99999;
+        transition: all .3s;
+    }
+
+    .dropdown p {
+        color: inherit;
     }
 
     .dropdown img {
@@ -625,6 +629,9 @@ section {
         justify-content: space-between;
         background-color: white;
         padding: 1% 2%;
+        z-index: 99999;
+        transition: all .3s;
+        color: black;
     }
 
     main {
@@ -654,7 +661,7 @@ section {
 
     .nav .nav-links a {
         text-decoration: none;
-        color: black;
+        color: inherit;
         font-size: 16px;
         font-weight: 700;
         font-family: 'avion';
@@ -673,6 +680,8 @@ section {
         background-color: white;
         padding: 1% 2%;
         padding-right: 6%;
+        z-index: 99999;
+        transition: all .3s;
     }
 
     .dropdown img {
@@ -828,6 +837,7 @@ section {
         font-style: normal;
         margin: 0;
         line-height: 2.4em;
+        text-align: center;
     }
 
     .veng a {
