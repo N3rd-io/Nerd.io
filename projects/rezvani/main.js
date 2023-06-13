@@ -4,6 +4,9 @@ let top1 = window.scrollY;
 let navMenu = document.getElementById('nav');
 let dropMenu = document.getElementById('dropdown');
 
+let progressBar = document.getElementById('progress-bar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+
 
 function turnblack() {
 
@@ -222,9 +225,13 @@ window.addEventListener('scroll', () => {
         navMenu.style.width = '-webkit-fill-available';
         dropMenu.style.position = 'fixed';
         dropMenu.style.width = '-webkit-fill-available';
+        progressBar.style.width = Math.round( ( window.pageYOffset / totalHeight ) * 100 ) + "%";
     }
+    
     else {
         navMenu.style.position = 'static';
         dropMenu.style.position = 'static';
     }
 })
+
+progressBar.style.width = ( ( window.pageYOffset / totalHeight ) * 100 ) + "%";

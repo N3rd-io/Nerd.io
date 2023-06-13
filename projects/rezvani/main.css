@@ -144,7 +144,7 @@ header {
         font-style: normal;
         transition: all .3s;
         text-align: center;
-        width: 68%;
+        width: 78%;
         padding: 20px;
         margin: 0;
         border-style: solid;
@@ -617,6 +617,15 @@ header {
         color: black;
     }
 
+    .progress-bar {
+        position: fixed;
+        z-index: 999999;
+        background-color: red;
+        height: 4px;
+        width: 0%;
+        transition: all .3s;
+    }
+
 }
 
 
@@ -708,7 +717,7 @@ header {
         top: 0;
         bottom: 0;
         right: 0;
-        width: 68%;
+        width: 78%;
         height: 100vh;
         margin: auto;
         opacity: 0;
@@ -1201,6 +1210,15 @@ header {
         font-family: 'proxima';
         font-style: italic;
         color: black;
+    }
+
+    .progress-bar {
+        position: fixed;
+        z-index: 999999;
+        background-color: red;
+        height: 4px;
+        width: 0%;
+        transition: all 1s;
     }
 
 }
